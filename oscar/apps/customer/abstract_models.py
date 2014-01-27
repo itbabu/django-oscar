@@ -101,7 +101,7 @@ if hasattr(auth_models, 'BaseUserManager'):
             # Ideally, this would be done via a post-save signal. But we can't
             # use get_user_model to wire up signals to custom user models
             # see Oscar ticket #1127, Django ticket #19218
-            self._migrate_alerts_to_user()
+            #self._migrate_alerts_to_user()
 
 
 class AbstractEmail(models.Model):
